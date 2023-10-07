@@ -4,10 +4,10 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
 
 //route resource
-Route::get('/post', [PostController::class, 'index']);
-Route::get('/post/create', [PostController::class, 'create'])->name('post.create');
-Route::post('/post/store', [PostController::class, 'store'])->name('post.store');
-Route::get('/post/edit/{id}', [PostController::class, 'edit'])->name('post.edit');
-Route::post('/post/update/{id}', [PostController::class, 'update'])->name('post.update');
-Route::get('/post/delete/{id}', [PostController::class, 'destroy'])->name('post.destroy');
-Route::get('/post/show/{id}', [PostController::class, 'show']);
+Route::get('/posts', [PostController::class, 'index']);
+Route::get('/posts/create', [PostController::class, 'create'])->name('posts.create');
+Route::post('/posts/store', [PostController::class, 'store'])->name('posts.store');
+Route::get('/posts/edit/{id}', [PostController::class, 'edit'])->name('posts.edit');
+Route::post('/posts/update/{id}', [PostController::class, 'update'])->name('posts.update');
+Route::get('/posts/delete/{id}', [PostController::class, 'destroy'])->name('posts.destroy');
+Route::get('/posts/show/{id}', [PostController::class, 'show']);
